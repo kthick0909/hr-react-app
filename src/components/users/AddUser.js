@@ -19,7 +19,7 @@ const AddUser = () => {
 
   const onSubmit = async e => {
     e.preventDefault();
-    await axios.post("http://localhost:3003/users", user);
+    await axios.post("https://hr-react-app.vercel.app:3003/users/add", user);
     history.push("/");
   };
   return (
