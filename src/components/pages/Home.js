@@ -16,7 +16,7 @@ const Home = () => {
   };
 
   const deleteUser = async id => {
-    await axios.delete(`http://localhost:3003/users/${id}`);
+    await axios.delete(`https://hr-react-app.vercel.app:3003/users/${id}`);
     loadUsers();
   };
 
